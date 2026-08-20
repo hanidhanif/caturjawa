@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catur Jawa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header>
+      <div>
+        <p class="eyebrow">♟ GAME TRADISIONAL NUSANTARA ♟</p>
+        <h1>Catur <span>Jawa</span></h1>
+        <p class="subtitle">Dua pemain • satu perangkat</p>
+      </div>
+      <button id="restartBtn">↻ Main Lagi</button>
+    </header>
+
+    <section class="panel">
+      <div class="turn">
+        <span>SEKARANG GILIRAN</span>
+        <strong id="turnText">⚪ Pemain Putih</strong>
+      </div>
+
+      <div class="board-wrap">
+        <div class="board-title">ꦕꦠꦸꦂ &nbsp; JAWA</div>
+        <div id="board" class="board"></div>
+      </div>
+
+      <p id="status">Pilih bidak Putih untuk memulai permainan.</p>
+    </section>
+
+    <section class="history-panel">
+      <div class="history-head">
+        <h2>📜 Riwayat Langkah</h2>
+        <button id="clearBtn">Bersihkan</button>
+      </div>
+      <ol id="history"></ol>
+    </section>
+  </main>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-box">
+      <div>🏆</div>
+      <h2 id="winnerTitle">Pemenang!</h2>
+      <p id="winnerText"></p>
+      <button id="playAgainBtn">Main Lagi ♟</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
